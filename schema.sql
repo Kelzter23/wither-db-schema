@@ -37,6 +37,7 @@ CREATE TABLE sensor_readings (
     FOREIGN KEY (marker_id) 
     REFERENCES markers(marker_id)
     ON DELETE CASCADE
+    
 );
 
 CREATE TABLE user_logs (
