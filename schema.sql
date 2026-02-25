@@ -26,12 +26,11 @@ CREATE TABLE markers (
     ON DELETE SET NULL
 );
 
-CREATE TABLE sensor_readings (
+CREATE TABLE sensor (
     reading_id BIGINT AUTO_INCREMENT PRIMARY KEY,
     marker_id INT NOT NULL,
     temperature DECIMAL(5,2),
     humidity DECIMAL(5,2),
-    heat_index DECIMAL(5,2),
     recorded_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
 
     FOREIGN KEY (marker_id) 
