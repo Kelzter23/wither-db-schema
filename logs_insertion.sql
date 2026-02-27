@@ -3,7 +3,7 @@ INSERT INTO user_logs (user_id, action) VALUES
 (1, 'Admin logged in'),
 (1, 'Admin added new marker'),
 (2, 'User viewed NBSC Spot 2'),
-(3, 'User logged out');
+(3, 'User viewed NBSC Covered Court');
 
 
 SELECT *
